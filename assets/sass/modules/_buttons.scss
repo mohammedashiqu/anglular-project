@@ -1,0 +1,163 @@
+
+button {
+	
+	&:focus {
+		outline: 0;
+	}
+}
+
+.green-button {
+	font-size: 14px;
+	font-weight: 600;
+	display: inline-block;
+	padding: 5px 15px;
+    text-align: center; 
+	color: $white;
+	min-width: 140px;
+	background-color: $secondarycolor;
+	background: linear-gradient(270deg, rgba($primarycolor, 1), rgba($secondarycolor , 1));
+	//order: 2px solid $secondarycolor; 
+	border-radius: 20px;
+
+	@media (max-width: $breakpoint-xs) {
+		font-size: 12px;
+		min-width: 80px;
+		padding: 0 25px;
+	}
+	
+	
+	&:hover {
+		background: $primarycolor;
+		border-color: $primarycolor;
+		color: $white;
+	}
+
+}
+
+
+.banner-btn{
+	font-size: 15px;
+	font-weight: 600;
+	display: inline-block;
+	padding: 6px 35px;
+    text-align: center; 
+	color: $primarycolor;
+	min-width: 130px;
+	background-color:$white;
+	border: 2px solid $white; 
+	border-radius: 30px;
+	text-transform: uppercase;
+	margin-top: 15px;
+	margin-right: 10px; 
+
+	@media (max-width: $breakpoint-xs) {
+		font-size: 12px;
+		min-width: 80px;
+		padding: 0 25px;
+	}
+	
+	&:hover {
+		background: transparent;
+		border-color: $white;
+		color: $white;
+		@include box-shadow(5px, 2px, 5px, rgba(0, 0, 0, 0.2));
+        @include translate3d(0px, -5px, 0px);
+	}
+
+}
+
+.contact-button{
+	font-size: 18px;
+	font-weight: 600;
+	display: inline-block;
+	padding: 8px 35px;
+    text-align: center; 
+	color: $white;
+	min-width: 140px;
+	background-color: $primarycolor;
+	border: 2px solid $primarycolor; 
+	border-radius: 30px;
+
+	@media (max-width: $breakpoint-xs) {
+		font-size: 18px;
+		min-width: 80px;
+		padding: 5px 25px;
+	}
+	
+	&:hover {
+		background: $secondarycolor;
+		border-color: $secondarycolor;
+		color: $white;
+	}
+
+}
+
+a.back-to-dashboard{
+	background: rgba(6, 21, 185, 0.6);
+    color: #ffffff;
+	font-weight: 500; 
+	display: inline-block; 
+    padding: 3px 15px;
+    border-radius: 25px;
+	font-size: 13px;
+	
+	&:hover{
+		@include box-shadow(5px, 2px, 5px, rgba(0, 0, 0, 0.2));
+        @include translate3d(0px, -5px, 0px);
+	}
+	
+}
+
+a.back-dashboard{ 
+	font-size: 13px;
+	font-weight: 400;
+	display: inline-block;
+	padding: 4px 25px;
+    text-align: center; 
+	color: $white; 
+	background: transparent;
+	border: 2px solid  rgba($white, 0.5); 
+	border-radius: 30px;
+	margin-bottom: 20px;
+	// position: absolute;
+	// top: 0px;
+	opacity: 0;
+	@include transition(all 0.5s ease-in-out); 
+	@include translate(-20%,0);  
+	
+	&:hover{
+		@include box-shadow(5px, 2px, 5px, rgba(0, 0, 0, 0.2));
+        @include translate3d(0px, -3px, 0px);
+	}
+
+
+}
+
+a.guide-btn{
+	font-size: 13px;
+	font-weight: 600;
+	display: inline-block;
+	padding: 3px 25px;
+    text-align: center; 
+	color: $primarycolor; 
+	background-color:$white;
+	border: 2px solid $white; 
+	border-radius: 30px;
+	text-transform: uppercase;
+	margin-top:5px;
+	margin-right: 10px; 
+
+	&:hover{
+		@include box-shadow(5px, 2px, 5px, rgba(0, 0, 0, 0.2));
+        @include translate3d(0px, -3px, 0px);
+	}
+
+}
+
+
+
+ 
+
+
+
+

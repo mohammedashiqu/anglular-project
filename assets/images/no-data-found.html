@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>AADMM</title>
+  <link rel="shortcut icon" href="assets/images/favicon.ico" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+
+  <!-- jQuery -->
+  <script src='assets/js/jquery.min.js'></script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+
+<body class="pushmenu-push">
+
+  <div class="wrapper">
+
+    <div class="user-dashboard" id="sidebar">
+
+        <div class="user-dashboard-left">
+  
+          <div class="nav-logo">
+            <a href="login.html" class="brand-logo">
+              <img class="logo-abbr" src="assets/images/logo.svg" alt="AADMM">
+              <span class="short-logo">
+                <img src="assets/images/logo.svg" alt="AADMM">
+              </span>
+            </a>
+          </div>
+
+<!-- <div class="text-center">
+    <a href="#" class="premium-plan-btn">
+        <img src="assets/images/premium-plan-icon.svg" alt="AADMM">
+        <span>Premium Plan</span>
+    </a>
+  
+</div> -->
+      
+  
+          <ul class="sidemenu">
+  
+            <li class="active">
+              <a href="index.html">
+                <span>
+                  <img src="assets/images/icon-dashboard.svg" alt="Dashboard">
+                </span>
+                <span class="nav-text"> Dashboard</span>
+              </a>
+            </li>
+  
+            <li>
+              <a href="upload-files-list.html">
+                <span>
+                  <img src="assets/images/icon-uploaded.svg" alt="Uploaded Files">
+                </span>
+                <span class="nav-text"> Uploaded Files</span>
+              </a>
+            </li>
+  
+            <li>
+              <a href="transcribed-files-list.html">
+                <span>
+                  <img src="assets/images/icon-transcribed.svg" alt="Transcribed Files ">
+                </span>
+                <span class="nav-text"> Transcribed Files</span>
+              </a>
+            </li>
+  
+             <li>
+              <a href="redacted-files.html">
+                <span>
+                  <img src="assets/images/icon-redacted.svg" alt="Redacted Files ">
+                </span>
+                <span class="nav-text"> Redacted Files</span>
+              </a>
+            </li>
+             <li>
+              <a href="wallet.html">
+                <span>
+                  <img src="assets/images/icon-wallet.svg" alt="wallet  ">
+                </span>
+                <span class="nav-text"> Wallet</span>
+              </a>
+            </li>
+            <li>
+              <a href="invoices.html" >
+                <span>
+                  <img src="assets/images/icon-invoices.svg" alt="Invoices  ">
+                </span>
+                <span class="nav-text"> Invoices</span>
+              </a>
+            </li>
+                 <li>
+              <a href="conversion-history.html">
+                <span>
+                  <img src="assets/images/icon-conversion.svg" alt="Conversion History">
+                </span>
+                <span class="nav-text">Conversion History</span>
+              </a>
+            </li>
+            <li>
+              <a href="faq.html">
+                <span>
+                  <img src="assets/images/icon-faq.svg" alt="FAQs">
+                </span>
+                <span class="nav-text">FAQs</span>
+              </a>
+            </li>
+  
+            <li>
+              <a href="settings.html">
+                <span>
+                  <img src="assets/images/icon-settings.svg" alt="Settings">
+                </span>
+                <span class="nav-text">Settings</span>
+              </a>
+            </li>
+  
+             
+  
+  
+  
+           
+            
+  
+  
+  
+          </ul>
+  
+  
+        </div>
+  
+  
+        <div class="user-dashboard-right">
+  
+          <div class="header">
+  
+  
+  
+            <nav class="navbar navbar-expand top-bar ">
+  
+              <div class="nav-control">
+                <div class="hamburger">
+                  <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+              </div>
+  
+                 <ul class="head-right d-flex">
+                
+           
+  
+                <li> 
+                  <div class="dropdown  ">
+                    <a href="#"  class="icon-notifications" id="notifications" data-bs-toggle="dropdown" aria-expanded="false" >
+                 <i class="fa-regular fa-bell"></i>
+                    </a>
+                   
+                    <div class="dropdown-menu dropdown-menu-end notifications-dropdown" aria-labelledby="notifications"> 
+                      <div class="notifications-top">
+
+                        <div class="row">
+                          <div class="col-7">
+                            <h5>Notifications</h5>
+                          </div>
+                          <div class="col-5 text-end">
+                            <a href="notifications.html" class="view-all">View All</a>
+                          </div>
+                        </div>
+ 
+
+                     
+
+                      </div>
+                     
+
+                    <ul class="notifications-links">
+                      <li class="new">
+                        <h5>Transcription Complete</h5>
+                        <p>File AUD20221806.MP3 transcription complete</p>
+                        <span>03:23 PM</span>
+                      </li>   
+                      <li class="new">
+                        <h5>Transcription Complete</h5>
+                        <p>File AUD20221806.MP3 transcription complete</p>
+                        <span>03:23 PM</span>
+                      </li>  
+                      <li class="new">
+                        <h5>Transcription Complete</h5>
+                        <p>File AUD20221806.MP3 transcription complete</p>
+                        <span>03:23 PM</span>
+                      </li>  
+                      <li  >
+                        <h5>Transcription Complete</h5>
+                        <p>File AUD20221806.MP3 transcription complete</p>
+                        <span>03:23 PM</span>
+                      </li>  
+                      <li >
+                        <h5>Transcription Complete</h5>
+                        <p>File AUD20221806.MP3 transcription complete</p>
+                        <span>03:23 PM</span>
+                      </li>  
+                      <li >
+                        <h5>Transcription Complete</h5>
+                        <p>File AUD20221806.MP3 transcription complete</p>
+                        <span>03:23 PM</span>
+                      </li>  
+                      <li >
+                        <h5>Transcription Complete</h5>
+                        <p>File AUD20221806.MP3 transcription complete</p>
+                        <span>03:23 PM</span>
+                      </li>  
+                      <li >
+                        <h5>Transcription Complete</h5>
+                        <p>File AUD20221806.MP3 transcription complete</p>
+                        <span>03:23 PM</span>
+                      </li>  
+                      <li >
+                        <h5>Transcription Complete</h5>
+                        <p>File AUD20221806.MP3 transcription complete</p>
+                        <span>03:23 PM</span>
+                      </li>  
+                  
+              
+                  </ul>
+  
+                  
+  
+  
+  
+  
+  
+                    </div>
+                  </div> 
+                </li>
+                
+           
+  
+                <li> 
+                  <div class="dropdown  ">
+                    <a href="#"  class="icon-profile" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >HM </a>
+                    <!-- <button class="btn btn-secondary dropdown-toggle" type="button" >
+                      Dropdown button
+                    </button> -->
+                    <div class="dropdown-menu dropdown-menu-end head-dropdown" aria-labelledby="dropdownMenuButton1">
+                    
+                      
+  
+                    <ul class="dropdown-links ">
+                      <li><a href="settings.html"> <img src="assets/images/my-profile-icon.svg" alt=""> My Profile</a> </li>   <li> <a href="login.html"> <img src="assets/images/logout-icon.svg" alt="">Logout</a> </li>
+              
+                  </ul>
+  
+                  
+  
+  
+  
+  
+  
+                    </div>
+                  </div> 
+                </li>
+               
+                
+   
+                
+  
+  
+  
+  
+  
+              </ul>
+   
+  
+  
+  
+  
+            </nav>
+          </div>
+  
+          <div class="clearfix"></div>
+  
+  
+  
+  
+          <div class="right-content">
+          
+        
+
+ 
+
+ 
+
+          <div class="upload-errors-box mt-4  d-grid " style="min-height: 80vh;">
+          
+            <div class="row m-auto w-100">
+                <div class="col-lg-12     d-grid   ">
+                  <div class="m-auto w-100">
+                      <div class="row">
+                          <div class="col-sm-7 mt-2   d-grid   ">
+                              <div class="m-auto ms-0">
+                                <img src="assets/images/error-icon.svg" alt=""  >
+                                    <h5 class="mt-3">No Data Found</h5>
+                                    <p class="mt-2">
+                                        Oops! No data. Please try again later.
+                                    </p>
+                                    <div class="mt-3">
+                                        <a href="index.html" class="add-money-btn d-inline-block me-sm-2"  >GO Home</a>
+                                        <!-- <a href="#" class="add-money-btn gary d-inline-block"  >Retry</a> -->
+                                    </div>
+                              </div>
+                            
+                          </div>
+                          <div class="col-sm-5 mt-2 text-end">
+                              <img src="assets/images/no-data-found.svg" class="img-fluid" alt="No Data Found">
+                          </div>
+                      </div> 
+                  </div>
+       
+                   
+              </div>
+              
+</div>
+
+
+          </div>
+   
+  
+   
+   
+  
+  
+  
+  
+  
+  
+          </div>
+  
+  
+   
+  
+  
+  
+  
+  
+  
+  
+        </div>
+  
+  
+        <div class="clearfix"></div>
+  
+  
+  
+      </div>
+  
+  
+
+
+
+
+
+  </div>
+  <!-- Wrapper Ends -->
+
+
+  <!-- JavaScript Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <!-- Custom Js -->
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+    $(".toggle-password").click(function () {
+      $(this).toggleClass("fa-eye fa-eye-slash");
+      input = $(this).parent().find("input");
+      if (input.attr("type") == "password") {
+        input.attr("type", "text");
+      } else {
+        input.attr("type", "password");
+      }
+    });
+  </script>
+
+</body>
+
+</html>

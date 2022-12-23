@@ -1,0 +1,39 @@
+
+@import 'bootstrap/bootstrap'; 
+ 
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/base';
+@import 'base/typography';
+
+@import 'layout/header'; 
+// @import 'layout/footer'; 
+
+
+@import 'modules/buttons';
+@import 'modules/checkbox';
+@import 'modules/date-picker';
+
+ 
+
+@import 'components/all.min'; 
+ 
+ 
+ 
+@import 'pages/login';   
+@import 'pages/dashboard'; 
+@import 'pages/details'; 
+@import 'pages/faq'; 
+@import 'pages/settings'; 
+@import 'pages/privacy'; 
+@import 'pages/notifications'; 
+@import 'pages/wallet'; 
+@import 'pages/user-list'; 
+@import 'pages/payment-list'; 
+@import 'pages/file'; 
+ 
+
+
+ 
+ 

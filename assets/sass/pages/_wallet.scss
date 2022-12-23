@@ -1,0 +1,228 @@
+.wallet-box{
+        
+    @include box-shadow(3px, 1px, 5px, rgba(0, 0, 0, 0.1));
+    @include transition(all 0.3s ease-in-out); 
+    @include translate(0%,0px);  
+    @include border-radius(20px);  
+    background-image: linear-gradient(to right, #591C37 0%, rgba(#7209B7,0.3) 40% , #191919 70%);
+    padding: 15px 30px;
+    width: calc( 66.66666667% - 15px );
+    margin-right: 15px;
+
+    @media (max-width: $breakpoint-md) { 
+      width: 100%;
+      margin-right: 0px;
+    }
+
+    h4{
+        font-family: $Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px; 
+        color: rgba($white, 0.6);
+
+    }
+    h3{
+        font-family: $Poppins;
+        font-style: normal;
+        font-weight: 300 !important;
+        font-size: 36px !important;
+        line-height: 72px !important; 
+        color: rgba($white, 1);
+
+    }
+}
+
+.wallet-box-right{
+    @include box-shadow(3px, 1px, 5px, rgba(0, 0, 0, 0.1));
+    @include transition(all 0.3s ease-in-out); 
+    @include translate(0%,0px);  
+    @include border-radius(20px);   
+    background:#191919;
+    padding: 30px 30px;
+    width: calc( 33.33333333% - 15px);
+    margin-left: 15px; 
+
+    @media (max-width: $breakpoint-md) { 
+      width: 100%;
+      margin-left: 0px;
+    }
+
+    h5{
+        font-family: $Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px; 
+        color: rgba($white, 1);
+
+    }
+    a.add-money-btn{
+        background: linear-gradient(90deg, rgba(#F72585, 1), rgba( #9511AB, 1), rgba( #4A0CA9, 1));
+      color: rgba( $white, 1);
+      border: 0px;
+      @include border-radius(28px);  
+      padding:15px 15px;
+      display:block;
+      font-size: 15px;
+      line-height: 16px;
+      font-weight:500;
+      text-align: center; 
+
+      &:hover{
+        @include box-shadow(1px, 1px, 10px, rgba($black, 0.5)); 
+        color: rgba( $white, 1);
+        @include translate(0%,-2px);  
+      }
+    }
+}
+
+
+
+ul{
+    &.transaction-list{
+      position: relative;
+
+      &::before{
+        content: "";
+        position: absolute;
+        left: 170px;
+        top:40px;
+        height: calc( 100% - 80px);
+        width: 1px;
+        border-left: #303030 3px dashed;
+
+        @media (max-width: $breakpoint-sm) {
+          left: 100px;
+         }
+
+
+       }
+
+
+      li{
+        display: flex;
+        margin-bottom: 15px;
+  
+        .conversion-left{ 
+          padding: 13px 30px 13px 10px; 
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: rgba(255, 255, 255, 0.5);
+          vertical-align: middle;
+          border-radius: 20px;
+          width: 180px;
+          display: grid;
+          position: relative;
+  
+          @media (max-width: $breakpoint-sm) {
+            width: 100px;
+           }
+  
+  
+           &::before{
+            content: "";
+            position: absolute;
+            left: 167px;
+            top:40px;
+            height: 8px;
+            width: 8px;
+            background: #303030;
+            @include border-radius(50%);  
+
+            @media (max-width: $breakpoint-sm) {
+              left:97px;
+             }
+
+           }
+    
+  
+          span{
+            margin: auto 0px auto auto;
+          }
+  
+        }
+  
+  
+        .conversion-right{
+          width: calc( 100% - 180px );
+         
+  
+          @media (max-width: $breakpoint-sm) {
+            width: calc( 100% - 110px );
+           }
+
+     
+          .conversion-box{
+            background: #191919; 
+            padding: 13px 15px; 
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgba($white, 0.7);
+            vertical-align: middle;
+            border-radius: 20px;
+            width: 100%;
+            display: block;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            position: relative;
+            padding-right: 100px;
+            word-break: break-all;
+  
+            @media (max-width: $breakpoint-sm) {
+              padding-right: 15px;
+             }
+  
+             h5{
+              font-family: $Poppins;
+              font-style: normal;
+              font-weight: 500;
+              font-size:16px;
+              line-height: 30px;    
+              color: rgba($white, 0.6);
+
+              span{
+                color: rgba($white, 1);
+              }
+             }
+             .time-text{
+              font-style: normal;
+              font-weight: 300;
+              font-size: 12px;
+              line-height: 24px;
+              color: rgba($white, 0.6);
+             }
+  
+     
+           
+            .hover-btn-warap{ 
+              position: absolute;
+              right: 15px;
+              top:15px;
+  
+              @media (max-width: $breakpoint-sm) {
+               position: relative;
+               right: auto;
+               top:auto;
+               display: block;
+               }
+    
+             
+            }
+  
+    
+          }
+  
+  
+        }
+      
+  
+      }
+    }
+  }
+  

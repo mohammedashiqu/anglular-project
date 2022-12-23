@@ -1,0 +1,510 @@
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@font-face {
+	font-family: 'Poppins';
+	src: url(../fonts/Poppins-Regular.ttf);
+  }
+
+ 
+
+
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+}
+b{
+	font-weight: bold;
+}
+
+
+h2{
+	&.main-head{
+	font-family:  $Poppins;
+	font-size:32px;
+	color: $primarycolor; 
+	
+	span{
+		font-family:  $Poppins;
+		color: $primarycolor;
+		font-size:36px;
+
+		@media (max-width: $breakpoint-sm) {
+			font-size: 18px;
+		  }
+	} 
+
+	@media (max-width: $breakpoint-sm) {
+        font-size: 18px;
+	  }
+
+	 
+
+
+	} 	
+}
+
+
+
+
+h3{ 
+	 font-size: 45px;
+	 color: $secondarycolor; 
+
+	 @media (max-width: $breakpoint-sm) {
+        font-size: 26px;
+	  }
+	  
+ }
+
+ h4{ 
+	font-size:22px;
+	color: $textcolor; 
+
+	@media (max-width: $breakpoint-sm) {
+	   font-size: 16px;
+	 }
+	 
+}
+
+h6{ 
+	font-size:14px;
+	color: $textcolor;  
+	 
+}
+
+label{
+	font-size: 12px;
+	font-weight: 500;
+	display: block;
+}
+.form-control{
+	font-size: 13px;
+}
+.add-plus-btn{
+	background: $white;
+	color: rgba(#506A88, 1);
+	padding: 3px 10px;
+	font-size: 13px;
+	@include box-shadow(2px, 4px, 7px, rgba(0, 0, 0, 0.1));
+	
+	&:hover{
+		background: $primarycolor;
+		color: $white;
+
+	}
+}
+
+
+a.tab-next-btn, button.tab-next-btn {
+	color: $white;
+	border: $primarycolor 2px solid;
+	background: $primarycolor;
+	padding: 7px 25px;
+	font-size: 13px;  
+	font-weight: 600;
+	height: auto;
+	border-radius:3px;
+	box-shadow: none;
+
+
+	&:hover{
+		color: $white;
+    		border: $primarycolor 2px solid;
+			background: $primarycolor;
+	}
+
+}
+
+.filter-btn{  
+    display: inline-grid; 
+	background: #191919;
+	padding: 7px;
+	border-radius: 7px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+
+	img{
+		margin: auto;
+	}
+	
+
+	&:hover{
+		color: $white; 
+		 background: $primarycolor;
+	}
+}
+
+.record-btns{
+
+	button{
+		color: #61656A;
+		border: #cacdd0 1px solid;
+			background: #E8F0F5;
+		// background: linear-gradient(170deg, rgba(#6e42be, 1), rgba( #00a9ce, 1)); 
+			padding: 3px 25px;
+			font-size: 12px;  
+			font-weight: 500;
+			height: auto;
+			border-radius: 3px; 
+
+			&:hover{
+				background: #0078D5;
+				color: rgba(#fff, 0.9);
+				border: #0078D5 1px solid;
+			}
+			
+			@media (max-width: $breakpoint-sm) {
+				padding: 3px 10px;
+				margin-right: 3px;
+				margin-bottom: 2px;
+			   }
+		
+	}
+}
+ 
+.bg-primary {
+    background-color: #4e73df!important;
+}
+.bg-success {
+    background-color: #1cc88a!important;
+}
+.bg-warning {
+    background-color: #f6c23e!important;
+}
+
+
+.submit-btn{
+	background: $primarycolor;
+	color: $white !important;
+	border: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 10px 25px;
+	text-transform: capitalize;
+
+	&:hover{
+		background: #5B89F3;
+		color: $white;
+	}
+}
+
+.Download-Sample-btn{
+	background: #e9f6ff;
+    color: #46b3ff;
+    border: 1px solid #46b3ff;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 25px;
+    padding: 4px 25px;
+    opacity: 1;
+
+}
+
+.red{
+	color: $red;
+}
+
+.custom-checkbox{
+	.custom-control-label{
+		position: relative;
+	  cursor: pointer;
+	
+	
+	  &:before {
+		content:'';
+		-webkit-appearance: none;
+		background-color: transparent;
+		border: 2px solid #7209B7;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+		padding: 7px;
+		display: inline-block;
+		position: relative;
+		vertical-align: middle;
+		cursor: pointer;
+		margin-right: 5px;
+		border-radius: 3px;
+	  }
+	
+
+	
+	}
+	input{
+		display: none;
+	}
+	input:checked + label::before {
+		background: #7209B7;
+	  }
+
+	input:checked + label:after {
+		content: '';
+		display: block;
+		position: absolute;
+	    top: 6px;
+   		left: 7px;
+		width: 6px;
+		height: 10px;
+		border: solid $white;
+		border-width: 0 2px 2px 0;
+		transform: rotate(45deg);
+	  }
+
+}
+.download-btn{
+	display:inline-block;
+	font-family: $Poppins;
+	color: rgba($white, 1);
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	 padding: 12px 35px;
+ 	 background: #191919; 
+	cursor: pointer;
+	position: relative;  
+	text-align: left;
+	// min-height: 50px;  
+	@include border-radius(25px);
+	text-transform: uppercase; 
+
+	@media (max-width: $breakpoint-sm) {
+		font-size: 12px;
+		line-height: 18px;
+		padding: 12px 20px;
+	  }
+	
+
+	&::after{
+		content: "";
+		position: absolute;
+		inset: 0;
+		@include border-radius(25px);
+		padding: 2px; /* тут padding замість border-width */
+		background: linear-gradient(-90deg, rgba($secondarycolor, 1), rgba( #9511AB, 1), rgba( $primarycolor, 1));
+
+		-webkit-mask: 
+		linear-gradient(#fff 0 0) content-box, /* [1] */
+		linear-gradient(#fff 0 0); /* [2] */
+	  -webkit-mask-composite: xor; /* [3] для підтримки браузерів */
+	  mask-composite: exclude; /* [3] */
+		  
+	  }
+
+	  &:hover{
+		color: rgba($white, 1);
+		transform: scale(1.02);
+	  }
+	 
+    
+  
+}
+
+.home-btns{
+	font-family: $Poppins;
+	background: $primarycolor;
+    color: $white; 
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 35px;
+    padding: 12px 45px;
+    opacity: 1;
+	text-transform: uppercase;
+	display: inline-block;
+	@include translate(0%,0px);  
+	@include transition(all 0.2s ease-in-out); 
+
+	@media (max-width: $breakpoint-sm) {
+		font-size: 13px;
+		line-height: 18px;
+		 
+	}
+
+	&.blue{
+		background: $secondarycolor;
+ 
+	}
+
+	&:hover{
+		// box-shadow: 4px 4px 10px 0 rgba($primarycolor, 0.2),
+        // -7px -7px 12px 0 rgba($secondarycolor, 0.3);
+		@include box-shadow(1px, 1px, 10px, rgba($black, 0.5)); 
+        color: rgba( $white, 1);
+        @include translate(0%,-2px); 
+	}
+}
+
+
+a.pre-btns{ 
+	background: #303030;
+	color: rgba( $white, 0.8); 
+	border: 0px;
+	padding:15px 15px;
+	display:inline-block;  
+	font-family: $Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	width: 100%;
+	max-width: 230px;
+	text-align: center;
+	border-radius: 25px;
+	text-transform: uppercase;
+	@include transition(all 0.2s ease-in-out); 
+	margin-right: 10px;
+ 
+	&:hover{ 
+		animation: gradient 4s linear  ; 
+		color: rgba( $white, 1);
+	}
+}
+
+
+a.next-btns{
+	//  background: linear-gradient(90deg, rgba(#F72585, 1), rgba( #9511AB, 1), rgba( #4A0CA9, 1),rgba(#4A0CA9, 1), rgba( #9511AB, 1), rgba( #F72585, 1));
+	// //background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+    // background-size: 200% 100%;  
+	 background: rgba($secondarycolor, 1);
+	 color: rgba( $white, 1); 
+	border: 0px;
+	padding:15px 15px;
+	display:inline-block;  
+	font-family: $Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	width: 100%;
+	max-width: 230px;
+	text-align: center;
+	border-radius: 25px;
+	text-transform: uppercase;
+	@include transition(all 0.2s ease-in-out); 
+ 
+	&:hover{
+		// background: linear-gradient(-90deg, rgba(#F72585, 1), rgba( #9511AB, 1), rgba( #4A0CA9, 1));
+		 
+		animation: gradient 4s linear  ;
+		// animation-direction: alternate;
+		color: rgba( $white, 1);
+	}
+
+
+}
+
+a.selectall-btns{
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 24px;  
+	text-transform: uppercase; 
+	color: rgba($primarycolor, 0.8); 
+
+	&:hover{
+		color: rgba($secondarycolor, 0.8); 
+	}
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.home-btns-format{
+	display: flex;
+	background-color: rgba($primarycolor, 1);
+	// background: linear-gradient(90deg, rgba(#F72585, 1), rgba( #9511AB, 1), rgba( #4A0CA9, 1),rgba(#4A0CA9, 1), rgba( #9511AB, 1), rgba( #F72585, 1));
+	//background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+	background-size: 400% 100%;  
+	width: 100%; 
+	max-width: 340px;
+		text-align: center;
+		border-radius: 25px;
+		text-transform: uppercase; 
+		float: right;
+		align-items: center;
+		justify-content: space-between;
+
+		&.blue{
+			background: rgba($secondarycolor, 1);
+		}
+
+	
+
+		@media (max-width: $breakpoint-sm) {
+			float: none;
+			margin-top: 15px;
+	  
+		  }
+
+	.home-btns-left{
+
+		color: rgba( $white, 1); 
+		border: 0px;
+		padding:10px 15px 10px 20px;
+		display:inline-block;  
+		font-family: $Poppins;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 16px;
+		
+
+	}
+
+	.dropdown-toggle{
+
+		 
+		color: rgba( $white, 1); 
+		border-radius: 0px;
+		padding:10px 20px 10px 15px;
+		display:inline-block;  
+		font-family: $Poppins;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 16px; 
+		border-left: 1px solid rgba( $white, 0.3);
+	}
+
+
+}
+
+a.add-btns{ 
+	background: #303030;
+	color: rgba( $white, 0.8); 
+	border: 0px;
+	padding:15px 35px;
+	display:inline-block;  
+	font-family: $Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px; 
+	text-align: center;
+	border-radius: 25px;
+	text-transform: uppercase;
+	@include transition(all 0.2s ease-in-out); 
+	margin-right: 10px;
+ 
+	@media (max-width: $breakpoint-sm) {
+		padding:10px 25px;
+		font-size: 13px;
+	line-height: 16px; 
+	  }
+	&:hover{ 
+		animation: gradient 4s linear  ; 
+		color: rgba( $white, 1);
+	}
+}

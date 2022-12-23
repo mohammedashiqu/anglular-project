@@ -1,0 +1,164 @@
+/* Scss Document */
+
+ 
+
+*,
+*::after,
+*::before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+*:focus {
+    outline: none
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+//   color: rgba(255,255,255,0.90)
+color: red;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(255,255,255,0.90)
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(255,255,255,0.90)
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(255,255,255,0.90)
+}
+
+html {
+    font-family:  $Poppins !important;
+    -ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	overflow-x: hidden;
+	
+}
+
+
+body {
+	// font-family: 'Muli', sans-serif;
+	font-family:  $Poppins !important;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: $gray;
+	background-color: $white; 
+
+	input, select, textarea {
+		 font-size: 100%; 
+		}
+} 
+
+
+
+
+.wrapper {
+	margin: 0;
+	padding: 0;
+	overflow: hidden
+}
+
+
+a, button {
+	color: $blue;
+	cursor: pointer;
+	text-decoration: none;
+	@include transition(all 0.3s ease-in-out);
+}
+
+a {
+	&:hover {
+		text-decoration: none !important;
+	}
+}
+
+.equal {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap
+}
+
+.equal > [class*='col-'] {
+	display: flex;
+	flex-direction: column
+}
+
+.text-center-verticle {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+p{
+	color: $textcolor;
+	font-size: 14px;
+	line-height: 24px; 
+}
+li {
+	list-style: none;
+}
+a:hover,
+a:visited, a:focus,
+a {
+	text-decoration: none;
+	outline: none !important; 
+	outline-style: none !important;
+}
+.trs {
+	transition: all .5s ease 0s;
+	-webkit-transition: all .5s ease 0s;
+	-moz-transition: all .5s ease 0s;
+	-o-transition: all .5s ease 0s;
+	-ms-transition: all .5s ease 0s;
+}
+input:focus, button:focus, .dropdown-toggle:focus {
+  outline: none;
+}
+/* .revealOnScroll {
+	 opacity: 0; 
+} */
+
+ 
+ 
+
+ 
+.read-btn {
+	font-size: 15px;
+	font-weight:500;
+	display: inline-block;
+	padding:6px 35px;
+	  text-align: center; 
+	color: $white !important; 
+	background-color: $primarycolor;
+	border: 2px solid $primarycolor; 
+	border-radius: 30px;
+	margin-top: 10px;
+	text-transform: uppercase;
+
+	&:hover {
+	  background: $primarycolor;
+	  border-color: $primarycolor;
+	  color: $white !important;
+	  @include box-shadow(5px, 2px, 5px, rgba(0, 0, 0, 0.2));
+	  @include translate3d(0px, -5px, 0px);
+	}
+		}
+
+
+
+ 
+
+
+
+  

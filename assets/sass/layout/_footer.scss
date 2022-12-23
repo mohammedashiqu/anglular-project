@@ -1,0 +1,213 @@
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+     background-color: $white;
+    //  margin-top: 15px;
+     padding: 5px 15px 15px;
+     width: calc(100% + 0px); 
+    //  margin-left: -20px;
+    //  margin-bottom: -12px;
+
+    @media (max-width: $breakpoint-md) {
+        // position: relative;
+    } 
+
+    .copy-right {
+        color: rgba($textcolor, 1);
+        font-size: 12px;
+        
+
+        @media (max-width: $breakpoint-md) {
+            text-align: center;
+            margin: 15px 0 0; 
+        }
+
+        p{
+            color: $white;
+            font-size: 13px;
+
+        }
+        a{
+            color: $white;
+            font-size: 21px; 
+            line-height: 24px;
+            display:inline-block;
+
+        }
+
+        .footer-logo{
+            margin-left: 15px;
+            display:inline-block;
+            line-height: 24px; 
+            width: 90px;
+ 
+
+        }
+        .footer-logo02{
+            margin-left: 15px;
+            display:inline-block;
+            line-height: 24px; 
+            width: 90px; 
+        }
+        .footer-logo03{
+            margin-left: 15px;
+            display:inline-block;
+            line-height: 24px; 
+            width: 50px; 
+        }
+
+       .text-right{
+
+        @media (max-width: $breakpoint-sm) {
+           text-align: center !important;
+        }
+
+        }
+
+    }
+
+
+        .footer-top {
+            width: 100%; 
+            padding: 60px 0 60px;
+            margin: 0 auto; 
+    
+            @media (max-width: $breakpoint-sm) {
+                padding: 40px 0;
+            }
+
+            h3{
+                font-size: 16px;
+                color: $white;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+
+                @media (max-width: $breakpoint-sm) {
+                    margin-top: 15px;
+                  }
+            }
+    
+
+            .footer-logo {
+                max-width:100px;
+                width: 100%;
+                margin: 0 0 0px;
+                margin-left: auto;
+                margin-right: auto;  
+
+                @media (max-width: $breakpoint-sm) {
+                    max-width: 150px;
+                } 
+            }
+
+      
+    
+            .about-content {
+                margin: 5px 0 20px;
+                 color: $lightgray;
+                 font-size: 14px;
+                 line-height: 21px; 
+                 
+
+            }
+
+            .footer-links{
+                a{
+                    font-size: 14px;
+                    color: $white;
+                    font-weight: 400;
+                    display: block;
+                    position: relative;
+                    padding-left: 15px;
+                    position: relative;
+                    margin-bottom: 3px;
+
+                    &::before{ 
+                        content: "\f105";
+                        position: absolute;
+                        font-family: "FontAwesome";
+                        font-size: 16px;
+                        left: 0px;
+                        top: -2px;
+                    }
+                }
+            }
+
+            .footer-address{
+
+                p{
+                    margin-bottom: 5px;
+                    color: $white;
+                    padding-left: 30px;
+                    position: relative;
+                    font-size: 14px;
+                    font-weight: 400;
+
+                    span {
+                        position: absolute;
+                        left: 0px;
+                    }
+
+                    a{
+                        color: $white;
+                    }
+                }
+
+            }
+    
+          
+         
+    
+        
+    
+        }
+
+      
+        .footer-bottom { 
+            width: 100%; 
+            padding: 20px 0 20px;
+            margin: 0 auto;
+            background: linear-gradient(270deg, rgba(#3877FB, 1), rgba(#3E6FD5 , 1));
+
+            @media (max-width: $breakpoint-sm) {
+                text-align: center;
+            }
+
+
+
+
+         
+
+    
+            .social-list {
+                float: right;
+
+                @media (max-width: $breakpoint-sm) {
+                    float: none;
+                  }
+    
+                a {
+                    background: $white;
+                    color: $primarycolor;
+                    display: inline-block; 
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 30px;
+    
+                    &:hover {
+                        color: $primarycolor; 
+                        background: $secondarycolor;
+                    }
+                }
+            }
+    
+            
+        }
+
+    }
+
+

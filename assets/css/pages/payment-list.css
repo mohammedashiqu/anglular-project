@@ -1,0 +1,133 @@
+.togle-checkbox .switch {
+  font-size: 1rem;
+  position: relative;
+  float: none;
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+.togle-checkbox .switch label.switch-label {
+  display: inline-block;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  padding-right: 8px;
+}
+.togle-checkbox .switch input {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  background: none;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  padding: 0;
+}
+.togle-checkbox .switch input:focus {
+  box-shadow: none;
+}
+.togle-checkbox .switch input + label {
+  position: relative;
+  min-width: 3rem;
+  border-radius: 1.9rem;
+  height: 1.1rem;
+  line-height: 1.9rem;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  vertical-align: middle;
+  text-indent: 4.3rem;
+}
+.togle-checkbox .switch input + label::before, .togle-checkbox .switch input + label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.2rem;
+  bottom: 0;
+  display: block;
+}
+.togle-checkbox .switch input + label::before {
+  right: 0;
+  background-color: #63545b;
+  border-radius: 1.9rem;
+  transition: 0.2s all;
+}
+.togle-checkbox .switch input + label::after {
+  top: 2px;
+  left: 2px;
+  width: calc(1.1rem - 4px);
+  height: calc(1.1rem - 4px);
+  border-radius: 50%;
+  background-color: white;
+  transition: 0.2s all;
+}
+.togle-checkbox .switch input:checked + label::before {
+  background-color: #F72585;
+}
+.togle-checkbox .switch input:checked + label::after {
+  margin-left: 1.1rem;
+}
+.togle-checkbox .switch input:focus + label::before {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 136, 221, 0.25);
+}
+.togle-checkbox .switch input:disabled + label {
+  color: #868e96;
+  cursor: not-allowed;
+}
+.togle-checkbox .switch input:disabled + label::before {
+  background-color: #e9ecef;
+}
+.togle-checkbox .switch.switch-sm {
+  font-size: 0.875rem;
+}
+.togle-checkbox .switch.switch-sm input + label {
+  min-width: 3.1rem;
+  height: 1.55rem;
+  line-height: 1.55rem;
+  text-indent: 3.6rem;
+}
+.togle-checkbox .switch.switch-sm input + label::before {
+  width: 3.1rem;
+}
+.togle-checkbox .switch.switch-sm input + label::after {
+  width: calc(1.55rem - 4px);
+  height: calc(1.55rem - 4px);
+}
+.togle-checkbox .switch.switch-sm input:checked + label::after {
+  margin-left: 1.55rem;
+}
+.togle-checkbox .switch.switch-lg {
+  font-size: 1.25rem;
+}
+.togle-checkbox .switch.switch-lg input + label {
+  min-width: 4.8rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  text-indent: 5.3rem;
+}
+.togle-checkbox .switch.switch-lg input + label::before {
+  width: 4.8rem;
+}
+.togle-checkbox .switch.switch-lg input + label::after {
+  width: calc(2.4rem - 4px);
+  height: calc(2.4rem - 4px);
+}
+.togle-checkbox .switch.switch-lg input:checked + label::after {
+  margin-left: 2.4rem;
+}
+.togle-checkbox .switch + .switch {
+  margin-left: 1rem;
+}
+.togle-checkbox .contentB {
+  display: none;
+}
+
+/*# sourceMappingURL=payment-list.css.map */

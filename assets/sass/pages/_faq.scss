@@ -1,0 +1,78 @@
+.faq-accordion{
+
+    .accordion-item{
+        margin-top: 20px; 
+        background: #303030;
+        border-radius: 20px;
+        overflow: hidden;
+        border: none;
+
+        .accordion-button{
+            background: #303030;
+            border-radius: 20px;
+           
+            padding: 20px 40px;
+            font-family: $Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px; 
+            color: $white;
+
+            @media (max-width: $breakpoint-md) { 
+                font-size: 14px;
+                line-height: 21px; 
+                padding: 15px 20px;
+              }
+
+            &:after {
+                content: "-"; 
+                background: none;  
+                font-size: 36px;
+                font-weight: 400;
+            
+             }
+
+            &.collapsed{
+                background: #191919;
+                color: rgba($white, 0.6);
+                box-shadow: none;
+
+                &:after {
+                    content: "+";  
+                
+                 }
+            }
+
+            &:focus{
+                border: none !important;
+                box-shadow: none !important;
+            }
+
+        }
+
+        .collapse {
+            background: #303030;
+
+         
+        }
+
+        .accordion-body{
+            font-family: $Poppins;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px; 
+            color: rgba($white, 0.6);
+            padding: 20px 40px;
+
+            @media (max-width: $breakpoint-md) { 
+                padding: 15px 20px;
+            }
+
+        }
+
+
+    }
+
+}
